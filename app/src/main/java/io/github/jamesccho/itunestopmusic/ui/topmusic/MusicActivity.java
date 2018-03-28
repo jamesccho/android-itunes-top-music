@@ -82,7 +82,7 @@ public class MusicActivity extends AppCompatActivity {
         mViewModel.isNetworkConnected().observe(this, new Observer<Boolean>() {
             @Override
             public void onChanged(@Nullable Boolean isConnected) {
-//                mRefreshButton.setEnabled(isConnected != null && isConnected);
+                mRefreshButton.setEnabled(isConnected != null && isConnected);
             }
         });
 
